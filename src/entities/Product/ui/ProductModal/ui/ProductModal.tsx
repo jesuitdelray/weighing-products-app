@@ -3,10 +3,10 @@ import { Input, InputType } from "@/shared/ui/Input/Input"
 import { Modal } from "@/shared/ui/Modal"
 import styles from "./ProductModal.module.scss"
 import { Button, ButtonVariant } from "@/shared/ui/Button/Button"
-import { IProduct } from "../../../model/types/productSchema"
 import { CreateBarcode } from "@/features/CreateBarcode"
 import { valueRoundConverter } from "@/shared/lib/valueRoundConverter/valueRoundConverter"
 import { handleDownloadBarcode } from "@/features/DownloadBarcode/ui/downloadBarcode"
+import { IProduct } from "@/entities/Product/model/types/productSchema"
 
 interface IProductModalProps {
     isOpen: boolean

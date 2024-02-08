@@ -1,15 +1,16 @@
 import { useState } from "react"
 import styles from "./SearchedListPage.module.scss"
-import { ProductModal } from "entities/Product/ui/ProductModal/ui/ProductModal"
-import { useAppSelector } from "shared/lib/useAppSelector/useAppSelector"
-import { selectAllSearchedItemsData } from "features/SearchProduct/model/selectors/searchedItemsSelectors"
-import { Product } from "entities/Product"
-import { Section } from "entities/Section/ui/Section"
-import { useAppDispatch } from "shared/lib/useAppDispatch/useAppDispatch"
+import { ProductModal } from "@/entities/Product/ui/ProductModal/ui/ProductModal"
+import { useAppSelector } from "@/shared/lib/useAppSelector/useAppSelector"
+import { selectAllSearchedItemsData } from "@/features/SearchProduct/model/selectors/searchedItemsSelectors"
+import { Product } from "@/entities/Product"
+import { Section } from "@/entities/Section/ui/Section"
+import { useAppDispatch } from "@/shared/lib/useAppDispatch/useAppDispatch"
 import { useNavigate } from "react-router-dom"
-import { EPageRoutes } from "shared/const/Routes"
-import { sectionActions } from "entities/Section/model/slice/sectionSlice"
-import { IProductSectionSchema } from "entities/Section/model/types/sectionSchema"
+import { EPageRoutes } from "@/shared/const/Routes"
+import { sectionActions } from "@/entities/Section/model/slice/sectionSlice"
+import { IProductSectionSchema } from "@/entities/Section/model/types/sectionSchema"
+import { IProduct } from "@/entities/Product/model/types/productSchema"
 
 export function SearchedListPage() {
     const [isOpen, setIsOpen] = useState(false)
@@ -35,7 +36,7 @@ export function SearchedListPage() {
             <div className={styles.searchedItemsBlock}>
                 <div className={styles.searchedSectionsBlock}>
                     {searchedData.sections &&
-                        searchedData?.sections.map(item => {
+                        searchedData?.sections.map((item: IProductSectionSchema) => {
                             return (
                                 <Section
                                     onClick={() => onClick(item)}
@@ -48,7 +49,7 @@ export function SearchedListPage() {
                 </div>
                 <div className={styles.searchedProductsBlock}>
                     {searchedData.allProducts &&
-                        searchedData?.allProducts.map(item => {
+                        searchedData?.allProducts.map((item: IProduct) => {
                             return (
                                 <Product
                                     productData={item}

@@ -1,11 +1,11 @@
 import { mockProductSections } from "../const/mockData"
 import styles from "./ProductsSectionPage.module.scss"
-import { useAppDispatch } from "shared/lib/useAppDispatch/useAppDispatch"
+import { useAppDispatch } from "@/shared/lib/useAppDispatch/useAppDispatch"
 import { useNavigate } from "react-router-dom"
-import { Section } from "entities/Section/ui/Section"
-import { EPageRoutes } from "shared/const/Routes"
-import { sectionActions } from "entities/Section/model/slice/sectionSlice"
-import { IProductSectionSchema } from "entities/Section/model/types/sectionSchema"
+import { Section } from "@/entities/Section/ui/Section"
+import { EPageRoutes } from "@/shared/const/Routes"
+import { sectionActions } from "@/entities/Section/model/slice/sectionSlice"
+import { IProductSectionSchema } from "@/entities/Section/model/types/sectionSchema"
 
 export function ProductsSectionPage() {
     const dispatch = useAppDispatch()

@@ -1,4 +1,4 @@
-import { IProduct } from "entities/Product/model/types/productSchema"
+import { IProduct } from "@/entities/Product/model/types/productSchema"
 
 export interface IProductSectionSchema {
     id: number

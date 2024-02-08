@@ -1,5 +1,5 @@
-import { IProduct } from "entities/Product/model/types/productSchema"
-import { IProductSectionSchema } from "entities/Section/model/types/sectionSchema"
+import { IProduct } from "@/entities/Product/model/types/productSchema"
+import { IProductSectionSchema } from "@/entities/Section/model/types/sectionSchema"
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 
 const initialState = {

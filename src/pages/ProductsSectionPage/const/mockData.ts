@@ -1,4 +1,4 @@
-import { IProductSectionSchema } from "entities/Section/model/types/sectionSchema"
+import { IProductSectionSchema } from "@/entities/Section/model/types/sectionSchema"
 
 export const mockProductSections: IProductSectionSchema[] = [
     {

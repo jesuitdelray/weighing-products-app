@@ -1,6 +1,6 @@
-import { IProduct } from "entities/Product/model/types/productSchema"
+import { IProduct } from "@/entities/Product/model/types/productSchema"
 import styles from "./CreateBarcode.module.scss"
-import { createBarcodeValue } from "shared/lib/createBarcodeValue/createBarcodeValue"
+import { createBarcodeValue } from "@/shared/lib/createBarcodeValue/createBarcodeValue"
 
 interface ICreateBarcode {
     value: number

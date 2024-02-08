@@ -1,5 +1,5 @@
-import { SearchIcon } from "shared/assets/icons/SearchIcon"
-import { Input } from "shared/ui/Input/Input"
+import { SearchIcon } from "@/shared/assets/icons/SearchIcon"
+import { Input } from "@/shared/ui/Input/Input"
 import styles from "./SearchInput.module.scss"
 
 export interface SearchInputProps {

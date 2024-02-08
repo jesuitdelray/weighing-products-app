@@ -1,15 +1,15 @@
 import { useLocation, useNavigate } from "react-router-dom"
-import { useAppDispatch } from "shared/lib/useAppDispatch/useAppDispatch"
-import { useAppSelector } from "shared/lib/useAppSelector/useAppSelector"
-import { Button } from "shared/ui/Button/Button"
-import { SearchProduct } from "features/SearchProduct"
+import { useAppDispatch } from "@/shared/lib/useAppDispatch/useAppDispatch"
+import { useAppSelector } from "@/shared/lib/useAppSelector/useAppSelector"
+import { Button } from "@/shared/ui/Button/Button"
+import { SearchProduct } from "@/features/SearchProduct"
 import styles from "./Header.module.scss"
-import { searchedItemsActions } from "features/SearchProduct/model/slice/searchedItemsSlice"
+import { searchedItemsActions } from "@/features/SearchProduct/model/slice/searchedItemsSlice"
 import { useMemo, useState } from "react"
-import { EPageRoutes } from "shared/const/Routes"
-import { getSectionNameFromRoute } from "shared/lib/getSectionNameFromRoute/getSectionNameFromRoute"
-import { sectionActions } from "entities/Section/model/slice/sectionSlice"
-import { selectCurrentProductSection } from "entities/Section/model/selectors/sectionSelectors"
+import { EPageRoutes } from "@/shared/const/Routes"
+import { getSectionNameFromRoute } from "@/shared/lib/getSectionNameFromRoute/getSectionNameFromRoute"
+import { sectionActions } from "@/entities/Section/model/slice/sectionSlice"
+import { selectCurrentProductSection } from "@/entities/Section/model/selectors/sectionSelectors"
 
 export function Header() {
     const productSection = useAppSelector(selectCurrentProductSection)
@@ -46,7 +46,7 @@ export function Header() {
                     Back
                 </Button>
             )}
-            <p className={styles.currentProductSection}>{"hui" || displayedSectionTitle}</p>
+            <p className={styles.currentProductSection}>{"Products" || displayedSectionTitle}</p>
 
             <SearchProduct
                 className={styles.searchContainer}

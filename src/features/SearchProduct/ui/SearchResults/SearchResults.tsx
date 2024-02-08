@@ -1,11 +1,11 @@
-import { IProduct } from "entities/Product/model/types/productSchema"
+import { IProduct } from "@/entities/Product/model/types/productSchema"
 import styles from "./SearchResults.module.scss"
-import { IProductSectionSchema } from "entities/Section/model/types/sectionSchema"
+import { IProductSectionSchema } from "@/entities/Section/model/types/sectionSchema"
 
 interface ISearchResultsProps {
     filteredProducts: IProductSectionSchema[]
     onProductClick: (product: IProduct) => void
-    onSectionClick: (section: IProductSection) => void
+    onSectionClick: (section: IProductSectionSchema) => void
     className: string
 }
 
