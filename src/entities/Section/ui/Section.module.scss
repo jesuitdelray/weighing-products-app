@@ -1,0 +1,19 @@
+.productSection {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(18, 112, 6);
+    border-radius: 15px;
+    cursor: pointer;
+
+    .sectionName {
+        text-shadow: 0 0 10px black;
+    }
+
+    &:hover {
+        filter: brightness(120%);
+    }
+}

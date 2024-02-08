@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    max-width: 443px;
+    position: relative;
+}
+
+.label {
+    margin-bottom: 12px;
+    color: var(--color-base);
+}
+
+.input {
+    width: 100%;
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 100px;
+    color: var(--color-base);
+    outline: none;
+    padding: 5px;
+
+    &::placeholder {
+        color: var(--color-dark-gray);
+    }
+}
+
+.incorrect .input {
+    border: 1px solid var(--color-error);
+    color: var(--color-accent);
+}
+
+.required {
+    color: var(--color-error);
+}
+
+.error {
+    position: absolute;
+    color: var(--color-error);
+    font-size: var(--font-size-small);
+    bottom: -20px;
+    left: 28px;
+}

@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    width: 130px;
+    padding: 5px;
+    gap: 1px;
+    flex-wrap: wrap;
+    background-color: white;
+    position: absolute;
+    left: -100000px;
+    top: -100000px;
+
+    .cell {
+        .strip {
+            background-color: black;
+            height: 40px;
+        }
+
+        .number {
+            font-size: 12px;
+        }
+    }
+}
+.productDescriptionBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+}

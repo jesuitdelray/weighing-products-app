@@ -1,0 +1,50 @@
+.modalWrapper {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-image: url(/src/shared/assets/images/modalDecoration/productModalDecoration.svg);
+    background-color: rgba(255, 255, 255, 0.315);
+    background-size: 140%;
+    filter: brightness(140%);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+
+    .modalContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+
+        .closeModalBtn {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            scale: 1.4;
+            filter: brightness(80%);
+            &:hover {
+                filter: brightness(90%);
+            }
+        }
+    }
+
+    .printBtn {
+        margin-top: 45px;
+    }
+
+    .modalInput {
+        align-self: center;
+        max-width: 100px;
+        color: black;
+    }
+}

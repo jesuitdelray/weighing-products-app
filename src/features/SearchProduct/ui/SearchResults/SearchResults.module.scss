@@ -1,0 +1,17 @@
+.foundedSection {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.foundedProduct {
+    text-shadow: 0 0 1px #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.1s;
+
+    &:hover {
+        transform: translateX(2px);
+        border-bottom: 1px solid #ffffff;
+    }
+}

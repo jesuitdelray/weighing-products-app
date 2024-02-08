@@ -1,0 +1,30 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #00800088;
+    backdrop-filter: blur(10px);
+
+    .goBackButton {
+        position: absolute;
+        left: 50px;
+    }
+
+    .currentProductSection {
+        position: absolute;
+        left: 250px;
+        color: white;
+        font-size: 32px;
+    }
+
+    .searchContainer {
+        display: flex;
+        position: absolute;
+        right: 60px;
+        gap: 15px;
+    }
+}

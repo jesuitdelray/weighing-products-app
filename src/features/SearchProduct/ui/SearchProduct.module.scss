@@ -1,0 +1,33 @@
+.searchButton {
+    align-self: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.searchList {
+    position: absolute;
+    top: 40px;
+    left: 18px;
+    align-self: center;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #18753794;
+    max-height: 220px;
+    padding: 10px;
+    width: 100%;
+    max-width: 170px;
+    overflow-x: hidden;
+    color: white;
+}
+
+.isShownSearchList {
+    display: flex;
+}
+
+.searchInput {
+    align-self: center;
+}

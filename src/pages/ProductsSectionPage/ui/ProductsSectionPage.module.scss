@@ -1,0 +1,42 @@
+.productSectionContainer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/src/shared/assets/images/backgroundImages/background.webp);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    top: 0;
+    z-index: -1;
+
+    .productSectionBlock {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 120px 0 0 50px;
+
+        .productSection {
+            width: 250px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgb(18, 112, 6);
+            border-radius: 15px;
+            cursor: pointer;
+
+            .sectionName {
+                text-shadow: 0 0 5px black;
+            }
+
+            &:hover {
+                filter: brightness(120%);
+            }
+        }
+    }
+}

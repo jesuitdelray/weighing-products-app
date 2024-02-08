@@ -1,0 +1,67 @@
+.searchedItemsContainer {
+    display: flex;
+    background-image: url(/src/shared/assets/images/backgroundImages/background.webp);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.searchedItemsBlock {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    gap: 100px;
+
+    .searchedSectionsBlock {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .searchedProductsBlock {
+        display: flex;
+        gap: 50px;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+.searchedItemsBlock {
+    padding: 120px 0 0 50px;
+    overflow-y: auto;
+}
+
+.searchedItems {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2px;
+    font-family: monospace;
+    gap: 12px;
+    font-size: 20px;
+    color: white;
+    background-image: url(/src/shared/assets/images/productImages/productBackground.webp);
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 1px white;
+    filter: brightness(120%);
+
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(140%);
+    }
+}
+
+.noProductsFoundText {
+    font-size: 20px;
+}
