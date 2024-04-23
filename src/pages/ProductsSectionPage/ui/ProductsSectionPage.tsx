@@ -24,6 +24,7 @@ export function ProductsSectionPage() {
                         onClick={onClick}
                         sectionData={section}
                         key={index}
+                        test-id={`product-section`}
                         backgroundImage={`url(${section.backgroundImg})`}
                     />
                 ))}
